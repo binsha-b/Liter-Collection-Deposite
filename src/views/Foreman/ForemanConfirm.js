@@ -245,12 +245,9 @@ tempor incididunt ut labore et dolore magna aliqua.</Text>
           animationOut="slideOutDown"
           transparent={true}
           visible={modalVisible}
-          onRequestClose={() => {
-            Alert.alert('Modal has been closed.');
-            setModalVisible(!modalVisible);
-          }}>
+          >
           <View style={styles.centeredView}>
-            <View style={styles.modalView}>
+            <View style={styles.modalView} >
                <Pressable
                 style={[styles.button, styles.buttonClose]}
                 onPress={() => setModalVisible(!modalVisible)}>
@@ -380,6 +377,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     padding: 35,
     alignItems: 'center',
+    
   },
   button: {
     borderRadius: 20,

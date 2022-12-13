@@ -19,6 +19,7 @@ import Button from '../common/Button';
 import userStore from '../stores/userStore';
 import {FONT_FAMILY} from '../assets/fonts';
 
+
 const {height} = Dimensions.get('window');
 const {colors} = myDefaultTheme;
 
@@ -135,6 +136,11 @@ const MyAccount = ({navigation}) => {
           name={'Completed Surveys'}
           icon={require('../assets/icons/Survey.png')}
           onPress={() => navigation.navigate('CompletedSurveys')}
+        />
+        <AccountCard
+          name={'Foreman'}
+          icon={require('../assets/icons/Survey.png')}
+          onPress={() => navigation.navigate('ForemanFuelType')}
         />
 
         <View style={{padding: scale(30)}}>

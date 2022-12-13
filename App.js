@@ -14,7 +14,10 @@ import {commonStyles} from './src/utils/commonStyles';
 import HeaderBackIcon from './src/common/HeaderBackIcon';
 import SupervisorStack from './src/common/Stacks/Supervisor/SupervisorStack';
 import PDFViewer from './src/common/PDFViewer';
-//import CollectionList from './src/views/Supervisor/CollectionList'
+import CollectionList from './src/views/Supervisor/CollectionList'
+import ForemanFuelType from './src/views/Foreman/ForemanFuelType';
+import ForemanProceed from './src/views/Foreman/ForemanProceed';
+import ForemanConfirm from './src/views/Foreman/ForemanConfirm';
 const {colors} = myDefaultTheme;
 
 const Stack = createStackNavigator();
@@ -54,7 +57,10 @@ const App = () => {
           name="PDFViewer"
           component={PDFViewer}
         />
-         
+         <Stack.Screen name="CollectionList" component={CollectionList} />
+         <Stack.Screen name="ForemanFuelType" component={ForemanFuelType} />
+         <Stack.Screen name="ForemanProceed" component={ForemanProceed} />
+         <Stack.Screen name="ForemanConfirm" component={ForemanConfirm} />
       </Stack.Navigator>
       <FlashMessage
         style={{backgroundColor: colors.primaryLight}}

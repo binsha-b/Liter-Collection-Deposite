@@ -46,13 +46,13 @@ const [loadingCount, setLoadingCount] = useState(false);
               color: colors.secondary,
               
             }}>
-              #45343534534545
+              #5826284562312355
             </Text>
             <Text
             numberOfLines={1}
             style={{
               fontSize: scale(12),
-              fontFamily: FONT_FAMILY.regular,
+              fontFamily: FONT_FAMILY.semibold,
               textAlign: 'left',
               //paddingBottom: scale(1),
             }}>
@@ -63,12 +63,12 @@ const [loadingCount, setLoadingCount] = useState(false);
             <View style={{flex: 0.7, marginBottom: 10}}>
               <Text
                 style={{
-                  fontSize: scale(12),
-                  fontFamily: FONT_FAMILY.regular,
+                  fontSize: scale(11),
+                  fontFamily: FONT_FAMILY.semibold,
                   textAlign: 'left',
                   //paddingBottom: scale(3),
                 }}>
-                Station Code : 1212132
+                Station code: 2568565669
               </Text>
             </View>
             <View
@@ -100,7 +100,7 @@ const [loadingCount, setLoadingCount] = useState(false);
                     color: colors.secondary,
                     marginBottom: 2,
                   }}>
-                  11 Oct 2022
+                  14 Oct 2021
                 </Text>
                 </FontAwesome>
               </View>
@@ -130,7 +130,7 @@ const [loadingCount, setLoadingCount] = useState(false);
                 style={{
                   backgroundColor: colors.background2,
                   borderRadius: scale(10),
-                  paddingVertical: scale(5),
+                  paddingVertical: scale(2),
                   width: '100%',
                   alignSelf: 'center',
                 }}>

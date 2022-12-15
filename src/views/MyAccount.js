@@ -142,6 +142,21 @@ const MyAccount = ({navigation}) => {
           icon={require('../assets/icons/Survey.png')}
           onPress={() => navigation.navigate('ForemanFuelType')}
         />
+        <AccountCard
+          name={'Foreman Sale'}
+          icon={require('../assets/icons/Survey.png')}
+          onPress={() => navigation.navigate('SaleCompleted')}
+        />
+        <AccountCard
+          name={'Fuel Order'}
+          icon={require('../assets/icons/Survey.png')}
+          onPress={() => navigation.navigate('FuelOrder')}
+        />
+        <AccountCard
+          name={'Order Type'}
+          icon={require('../assets/icons/Survey.png')}
+          onPress={() => navigation.navigate('FuelOrderType')}
+        />
 
         <View style={{padding: scale(30)}}>
           <Button disabled={loader} onPress={onLogout}>

@@ -129,6 +129,7 @@ const SupervisorTab = () => {
         name="Account"
         component={MyAccount}
       />
+      
     </Tab.Navigator>
   );
 };

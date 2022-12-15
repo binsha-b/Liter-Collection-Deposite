@@ -11,6 +11,13 @@ import CollectionConfirm from '../../../views/Supervisor/CollectionConfirm';
 import DepositProceed from '../../../views/Supervisor/DepositProceed';
 import DepositConfirm from '../../../views/Supervisor/DepositConfirm';
 
+import CollectionList from '../../../views/Supervisor/CollectionList'
+import ForemanFuelType from '../../../views/Foreman/ForemanFuelType';
+import ForemanProceed from '../../../views/Foreman/ForemanProceed';
+import ForemanConfirm from '../../../views/Foreman/ForemanConfirm';
+import SaleCompleted from '../../../views/Foreman/SaleCompleted';
+import FuelOrder from '../../../views/Foreman/FuelOrder';
+import FuelOrderType from './../../../views/Foreman/FuelOrderType';
 const Stack = createStackNavigator();
 
 const SupervisorStack = () => {
@@ -70,6 +77,21 @@ const SupervisorStack = () => {
         component={DepositConfirm}
         options={{headerShown: true, headerTitle: ''}}
       />
+       <Stack.Screen name="CollectionList" component={CollectionList} />
+         <Stack.Screen name="ForemanFuelType" component={ForemanFuelType} />
+         <Stack.Screen name="ForemanProceed" component={ForemanProceed} />
+         <Stack.Screen name="ForemanConfirm" component={ForemanConfirm} />
+        
+         <Stack.Screen
+              name="SaleCompleted" 
+              component={SaleCompleted} 
+          />
+          <Stack.Screen
+              name="FuelOrder"
+              component={FuelOrder}
+              options={{headerShown: true, headerTitle: ''}}
+          />
+          <Stack.Screen name="FuelOrderType" component={FuelOrderType} />
     </Stack.Navigator>
   );
 };

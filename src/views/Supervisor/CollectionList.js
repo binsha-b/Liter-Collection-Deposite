@@ -290,7 +290,7 @@ const CollectionList = ({navigation}) => {
 
             <View style={{width: '100%',height:81,marginTop:10,}}>
             <Button onPress={() => setModalVisible(!modalVisible)}>
-              <Text style={{fontFamily: FONT_FAMILY.bold,
+              <Text style={{fontFamily: FONT_FAMILY.bold,marginTop:-5,
                 fontSize: scale(15),
                 color: colors.background,
                 marginRight: scale(0),}}>APPLY FILTER</Text>

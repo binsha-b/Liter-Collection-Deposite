@@ -1,4 +1,3 @@
-import {calendarFormat} from 'moment';
 import React, {useLayoutEffect,} from 'react';
 import {
   ActivityIndicator,
